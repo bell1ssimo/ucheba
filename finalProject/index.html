@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+    <script src="https://kit.fontawesome.com/a8476d5a12.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand mx-auto" href="index.html">SUSHI SAMURAI  <i class="fa-solid fa-shrimp"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto custom-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="sets.html"> Sets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About us</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+
+    <header class="parallax-header" id="parallax">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html">
+                    <img src="images/samurai_logo.png" alt="logo" width="200" class="d-block mx-auto" id="samuraiLogo">
+                </a>
+                <h3 class="text-center text-light">Sushi and Rolls</h3>
+            </div>
+        </div>
+        <img src="images/shushi.png" alt="sushi" width="200" id="sushiImage">
+    </header>
+
+
+
+    <div class="container">
+      <div class="content row">
+        <div class="col-md-6 left">
+          <h1></h1>
+          <p></p>
+          <h1 class="primary-color">Savor Elegance</h1>
+          <p class="text-justify">
+            Welcome to Sushi Samurai, where the ancient art of sushi meets modern culinary mastery.
+            Embark on a journey of flavors as our skilled chefs, true samurais of the kitchen,
+            meticulously craft each roll to perfection. Immerse yourself in a symphony of tastes,
+            textures, and aromas, where tradition meets innovation.
+          </p>
+          <a href="about.html">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" id="button-mainp">About Us</button>
+        </a>
+
+
+        </div>
+
+        <div class="col-md-6 right">
+          <img src="https://media.istockphoto.com/id/1286622470/photo/healthy-fresh-sushi-roll-set-with-ginger-close-up-japanese-food.webp?b=1&s=170667a&w=0&k=20&c=ypBK2FsuGrgVTgKPb29eleA6YJEXb5d0PG6LZb0M0ZU=" alt="img" class="w-100" id="img-container">
+        </div>
+      </div>
+      
+    </div>
+
+    
+
+    <div class="container mt-4">
+      <div id="menu" class="row justify-content-center">
+        <!-- Sushi Cards -->
+        <div id="sushiCard1" class="col-lg-6 col-md-6 col-sm-12 sushi fade-in">
+          <div class="card" style="width: 18rem;">
+            <img src="https://sushirolla.ru/img/compress/x1000_1691090523_7525.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Order sushi/rolls/nigiri</h4>
+              <a href="menu.html" class="btn btn-primary">Go to menu</a>
+            </div>
+          </div>
+        </div>
+        <div id="sushiCard2" class="col-lg-6 col-md-6 col-sm-12 sushi fade-in">
+          <div class="card" style="width: 18rem;">
+            <img src="https://shikisushi.lv/wp-content/uploads/2022/12/shikisushi-set.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Order ready sets</h4>
+              <a href="sets.html" class="btn btn-primary">Go to sets</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Contact Information</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Phone Number: +7 705 777 7777</p>
+            <p>Address: Sushi Delight, 3 Nori Lane, Astana City, Kazakhstan</p>
+            <img src="https://www.google.com/maps/d/thumbnail?mid=1q-zzaRocp7CZntaKMRgrPm4zieU&hl=en_US" alt="w213" style="width: 95%;">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+     
+      
+    
+  
+
+
+  
+
+  
+
+    <button id="backToTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+    <audio id="scrollSound">
+      <source src="sound/scroll-sound.mp3" type="audio/mp3">
+    </audio>
+
+    <header class="parallax-header" id="parallax">
+      <div class="container">
+          <div class="header-content">
+              <a href="#">
+              </a>
+          </div>
+      </div>
+      <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Our Address</h5>
+                    <p>Sushi Delight, 3 Nori Lane, Astana City, Kazakhstan</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-buttons">
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>&copy; 2023 Samurai Sushi</h5>
+                    <p>All rights reserved by: Nurmiyashev Adilkhan</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+  </header>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/d3js/7.8.5/d3.min.js"></script>
+    <script src="script.js" charset="UTF-8"></script>
+</body>
+</html>

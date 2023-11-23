@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+    <script src="https://kit.fontawesome.com/a8476d5a12.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand mx-auto" href="index.html">SUSHI SAMURAI  <i class="fa-solid fa-shrimp"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto custom-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link"  href="sets.html"> Sets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About us</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    
+    
+
+    <div class="container" id="buttons">
+        <div>
+          <button  id="sushiBtn" class="category-btn btn btn-primary active" data-category="sushi">Sushi</button>
+          <button  id="rollsBtn" class="category-btn btn btn-primary" data-category="rolls">Rolls</button>
+          <button  id="nigiriBtn" class="category-btn btn btn-primary" data-category="nigiri">Nigiri</button>
+        </div>
+      
+        <div id="menu" class="row flex-wrap">
+          <!-- Sushi Cards -->
+          <div id="sushiCard1" class="col-lg-4 col-md-6 col-sm-12 sushi fade-in">
+            <div class="card" style="width: 18rem;">
+              <img src="https://thumb.tildacdn.com/stor6636-6633-4331-a134-323965373130/-/format/webp/96739178.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">Salmon with tobiko</h4>
+                <h5>5,35$</h5>
+              </div>
+            </div>
+          </div>
+          <div id="sushiCard2" class="col-lg-4 col-md-6 col-sm-12 sushi fade-in">
+            <div class="card" style="width: 18rem;">
+              <img src="https://thumb.tildacdn.com/stor3839-3661-4133-a531-623761653132/-/format/webp/51758078.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">Uromaki with salmon and avocado</h4>
+                <h5>7,35$</h5>
+              </div>
+            </div>
+          </div>
+          <div id="sushiCard3" class="col-lg-4 col-md-6 col-sm-12 sushi fade-in">
+            <div class="card" style="width: 18rem;">
+              <img src="https://thumb.tildacdn.com/stor6136-3834-4964-b930-363165313966/-/format/webp/41758771.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">Oishi syake</h4>
+                <h5>4,35$</h5>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Rolls Cards -->
+          <div id="rollsCard1" class="col-lg-4 col-md-6 col-sm-12 rolls fade-in">
+            <div class="card" style="width: 18rem;">
+              <img src="https://thumb.tildacdn.com/stor6163-3736-4463-b737-366666623362/-/format/webp/27718821.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">Tender salmon</h4>
+                <h5>3,35$</h5>
+              </div>
+            </div>
+          </div>
+          <div id="rollsCard2" class="col-lg-4 col-md-6 col-sm-12 rolls fade-in">
+            <div class="card" style="width: 18rem;">
+              <img src="https://thumb.tildacdn.com/stor3630-6330-4438-b533-366661633866/-/format/webp/25420162.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">Kokoro</h4>
+                <h5>3,35$</h5>
+              </div>
+            </div>
+          </div>
+          <div id="rollsCard3" class="col-lg-4 col-md-6 col-sm-12 rolls fade-in">
+            <div class="card" style="width: 18rem;">
+              <img src="https://thumb.tildacdn.com/stor3533-6539-4439-b134-366166663165/-/format/webp/54245396.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">Uromaki with salmon</h4>
+                <h5>3,45$</h5>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Nigiri Cards -->
+          <div id="nigiriCard1" class="col-lg-4 col-md-6 col-sm-12 nigiri fade-in">
+            <div class="card" style="width: 18rem;">
+              <img src="https://thumb.tildacdn.com/stor3862-6435-4464-b735-386464343731/-/format/webp/54248458.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">Unagi</h4>
+                <h5>6.23</h5>
+              </div>
+            </div>
+          </div>
+          <div id="nigiriCard2" class="col-lg-4 col-md-6 col-sm-12 nigiri fade-in">
+            <div class="card" style="width: 18rem;">
+              <img src="https://thumb.tildacdn.com/stor6638-3762-4632-a439-383636396238/-/format/webp/99514679.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">Syake</h4>
+                <h5>7.23</h5>
+              </div>
+            </div>
+          </div>
+          <div id="nigiriCard3" class="col-lg-4 col-md-6 col-sm-12 nigiri fade-in">
+            <div class="card" style="width: 18rem;">
+              <img src="https://thumb.tildacdn.com/stor6134-3235-4234-b437-373061653265/-/format/webp/41984325.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">Abi</h4>
+                <h5>5.23</h5>
+              </div>
+            </div>
+          </div>
+        <!-- Sushi Cards row2 -->
+        <div id="sushiCard4" class="col-lg-4 col-md-6 col-sm-12 sushi fade-in">
+          <div class="card" style="width: 18rem;">
+            <img src="https://thumb.tildacdn.com/stor3832-3063-4637-a234-616535396534/-/format/webp/51025225.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">
+                Abogado sake</h4>
+              <h5>4,35$</h5>
+
+            </div>
+          </div>
+        </div>
+        <div id="sushiCard5" class="col-lg-4 col-md-6 col-sm-12 sushi fade-in">
+          <div class="card" style="width: 18rem;">
+            <img src="https://thumb.tildacdn.com/stor3839-3661-4133-a531-623761653132/-/format/webp/51758078.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Avocado maki</h4>
+              <h5>6,35$</h5>
+
+            </div>
+          </div>
+        </div>
+        <div id="sushiCard6" class="col-lg-4 col-md-6 col-sm-12 sushi fade-in">
+          <div class="card" style="width: 18rem;">
+            <img src="https://thumb.tildacdn.com/stor6136-3834-4964-b930-363165313966/-/format/webp/41758771.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Salmon maki</h4>
+              <h5>2,35$</h5>
+
+            </div>
+          </div>
+        </div>
+    
+        <!-- Rolls Cards row2 -->
+        <div id="rollsCard4" class="col-lg-4 col-md-6 col-sm-12 rolls fade-in">
+          <div class="card" style="width: 18rem;">
+            <img src="https://thumb.tildacdn.com/stor3037-3561-4065-b935-303030323939/-/format/webp/16000503.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Lava abi</h4>
+              <h5>3,55$</h5>
+
+            </div>
+          </div>
+        </div>
+        <div id="rollsCard5" class="col-lg-4 col-md-6 col-sm-12 rolls fade-in">
+          <div class="card" style="width: 18rem;">
+            <img src="https://thumb.tildacdn.com/stor6164-3535-4762-a530-383135323232/-/format/webp/91047388.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Lava syake</h4>
+              <h5>3,55$</h5>
+
+            </div>
+          </div>
+        </div>
+        <div id="rollsCard6" class="col-lg-4 col-md-6 col-sm-12 rolls fade-in">
+          <div class="card" style="width: 18rem;">
+            <img src="https://thumb.tildacdn.com/stor3462-6435-4165-b366-643837363862/-/format/webp/81720315.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Lava unage</h4>
+              <h5>3,70$</h5>
+
+            </div>
+          </div>
+        </div>
+    
+        <!-- Nigiri Cards row2-->
+        <div id="nigiriCard4" class="col-lg-4 col-md-6 col-sm-12 nigiri fade-in">
+          <div class="card" style="width: 18rem;">
+            <img src="https://thumb.tildacdn.com/stor6366-6134-4863-b563-306266303362/-/format/webp/47898247.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Baked salmon</h4>
+
+            </div>
+          </div>
+        </div>
+        <div id="nigiriCard5" class="col-lg-4 col-md-6 col-sm-12 nigiri fade-in">
+          <div class="card" style="width: 18rem;">
+            <img src="https://thumb.tildacdn.com/stor6637-6431-4339-b363-663830363439/-/format/webp/89307137.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Shake kunsei gunkan</h4>
+            </div>
+          </div>
+        </div>
+        <div id="nigiriCard6" class="col-lg-4 col-md-6 col-sm-12 nigiri fade-in">
+          <div class="card" style="width: 18rem;">
+            <img src="https://thumb.tildacdn.com/stor3830-3330-4339-b465-643834346639/-/format/webp/52026391.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Abi spice gunkan</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Contact Information</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Phone Number: +7 705 777 7777</p>
+            <p>Address: Sushi Delight, 3 Nori Lane, Astana City, Kazakhstan</p>
+            <img src="https://www.google.com/maps/d/thumbnail?mid=1q-zzaRocp7CZntaKMRgrPm4zieU&hl=en_US" alt="w213" style="width: 95%;">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button id="backToTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+    <audio id="scrollSound">
+      <source src="sound/scroll-sound.mp3" type="audio/mp3">
+    </audio>
+
+    <header class="parallax-header" id="parallax">
+      <div class="container">
+          <div class="header-content">      </div>
+      </div>
+      <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Our Address</h5>
+                    <p>Sushi Delight, 3 Nori Lane, Astana City, Kazakhstan</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-buttons">
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>&copy; 2023 Samurai Sushi</h5>
+                    <p>All rights reserved by: Nurmiyashev Adilkhan</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+  </header>
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/d3js/7.8.5/d3.min.js"></script>
+    <script src="script.js  " charset="UTF-8"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
